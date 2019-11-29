@@ -22,10 +22,14 @@ Use it in your JavaScript application:
 import CKEditor from './ckeditor';
 
 // Or using the CommonJS version:
-// const DecoupledEditor = require( './ckeditor' );
+// const CKEditor = require( './ckeditor' );
 
 CKEditor
-	.create( 'decoupled', document.querySelector( '#editor' ) , /** config {} */)
+	.create( 
+		'decoupled', // 'decoupled' | 'balloon' | 'balloon-block' | 'classic' | 'inline'
+		document.querySelector( '#editor' ), 
+		/** config {} */
+		)
 		.then( editor => {
 			// The toolbar needs to be explicitly appended.
 			document.querySelector( '#toolbar-container' ).appendChild( editor.ui.view.toolbar.element );
