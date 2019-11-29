@@ -19,12 +19,12 @@ CKEditor 5 Full Editor Build
 Use it in your JavaScript application:
 
 ```js
-import CKEditor from './ckeditor';
+import CKEditor5 from './ckeditor';
 
 // Or using the CommonJS version:
 // const CKEditor = require( './ckeditor' );
 
-CKEditor
+CKEditor5
 	.create( 
 		'decoupled', // 'decoupled' | 'balloon' | 'balloon-block' | 'classic' | 'inline'
 		document.querySelector( '#editor' ), 
